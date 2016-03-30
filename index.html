@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.6, maximum-scale=0.6, user-scalable=0"/> <!--320-->
+    <title>vrapt-daisy</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script src="http://erictrose.github.io/vrapt-daisy/script1.js"></script>
+    
+</head>
+<body>
+  
+    <h1>vrapt-daisy</h1>
+   
+    <FireBoxRoom>
+        <Assets>
+            <AssetWebSurface id="vrapt-daisy" src="http://erictrose.github.io/vrapt-daisy/" width="1000" height="800" />
+            <AssetScript src="http://erictrose.github.io/vrapt-daisy/script2.js" />
+        </Assets>
+        <Room id="room" use_local_asset="room_plane" pos="-7 30 -76" xdir="0 0 -1" ydir="0 1 0" zdir="1 0 0">
+            <Object id="plane" js_id="1" pos="4 2 6" xdir="-1 0 0" zdir="0 0 -1" scale="4 3.2 4" collision_id="plane" websurface_id="vrapt" />
+            <Object id="cube" js_id="2" pos="-8 0.3 30" collision_id="cube" locked="true"/> 
+        </Room>
+    </FireBoxRoom>
+
+    <script src="http://erictrose.github.io/vrapt-daisy/script3.js"></script>
+    
+</body>
+</html>
