@@ -1,2 +1,3 @@
 # vrapt-daisy
-Test bed for https://github.com/erictrose/vrapt
+Test bed for https://github.com/erictrose/vrapt <br>
+gh-pages link: http://erictrose.github.io/vrapt-daisy/ <br>
