@@ -5,7 +5,7 @@ var spaceCount = 0,
 
 room.onLoad = function(){
     for(i=0;i<itemCount;i++){
-        room.createObject("Object", {id: "cube", pos: Vector(-9, spacing, 30), collision_id: "cube"});
+        room.createObject("Object", {id: "cube", pos: Vector(6, spacing, 4.5), collision_id: "cube"});
         spaceCount += 1;
         spacing += spaceInc;
     };
