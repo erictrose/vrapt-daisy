@@ -1,6 +1,6 @@
 var spaceCount = 0,
-    spaceInc = 4,
-    spacing = 0.2,
+    spaceInc = 1,
+    spacing = 0.5,
     itemCount = 5;
 
 room.onLoad = function(){
