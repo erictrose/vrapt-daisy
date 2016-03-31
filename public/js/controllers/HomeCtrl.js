@@ -10,7 +10,7 @@ app.controller("HomeCtrl", ["currentAuth", "$scope", "$rootScope", "$routeParams
     $scope.myFloor = myFloor;
     
     //set scope variables
-    $scope.scopeVar1 = 'WORKING';
+    $scope.test = 'WORKING';
     $scope.openAModalOrSomething = true;
     
     //go back, needs to be a factory or service or something
@@ -18,10 +18,10 @@ app.controller("HomeCtrl", ["currentAuth", "$scope", "$rootScope", "$routeParams
         $location.path(place);
     };
     
-    //scope functions
-    $scope.doAThing = function(){
-        //do something
-    };
+//    //scope functions
+//    $scope.doAThing = function(){
+//        //do something
+//    };
 
 }]);
 
