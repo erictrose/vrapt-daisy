@@ -1,7 +1,7 @@
-console.log('script 1 loaded');
+console.log('script 1 loading');
 
 var app = angular.module("app", ["firebase","ngRoute"]);
 
 //all components loaded in html header
 
-console.log('app.js loaded');
+console.log('script 1 loaded');

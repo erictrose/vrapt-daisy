@@ -2,3 +2,18 @@ h1 {
     color: darkgoldenrod;
     text-align: center;
 }
+
+.wrapper {
+    width: 500px;
+    height: 500px;
+    background-color: lightgray;
+    margin: 0 auto;
+}
+
+.logged-out {
+    background-color: lightyellow;
+}
+
+.logged-in {
+    background-color: lightgreen;
+}

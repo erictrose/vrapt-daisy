@@ -16,13 +16,60 @@
     <!-- AngularFire -->
     <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
     
+    <!-- SCRIPTS -->
     <script src="./js/script1.js"></script>
+    <script src="./js/factories/Auth.js"></script>
+    <script src="./js/controllers/AuthCtrl.js"></script>
+    <script src="./js/controllers/NavCtrl.js"></script>
     
 </head>
 <body>
   
     <h1>vrapt-daisy</h1>
+
    
+   
+    <!--page wrapper-->
+    <div class="wrapper">
+    <!--auth wrapper-->
+    <div class="auth" ng-controller="AuthCtrl">
+        <!-- ##### LOGGED OUT ##### -->
+        <div class="logged-out" ng-hide="authData">
+            <span>{{providerError}}</span>
+            <button ng-click="twitterlogin()">login with twitter</button>
+            <button ng-click="googlelogin()">login with google</button>
+            <button ng-click="githublogin()">login with github</button>
+            <p>{{loginText}}</p>
+            <input type="email" name="" placeholder="email" ng-model="loginEmail">
+            <input type="password" name="" placeholder="password" ng-model="loginPassword">
+            <button ng-click="emaillogin()">login</button>
+            <p>{{registerText}}</p>
+            <input type="email" name="" placeholder="email" ng-model="registerEmail">
+            <input type="password" name="" placeholder="password" ng-model="registerPassword">
+            <button ng-click="register()">register</button>
+        </div> <!--close logged out-->
+        <!-- ##### LOGGED IN ##### -->
+        <div class="logged-in" ng-show="authData">
+            <p>{{profileName}}</p>
+            <img ng-src="{{profilePic}}" />
+            <button ng-click="logout()">logout</button>
+            <div ng-controller="NavCtrl">
+                <button ng-click="goTo('page2')">page 2</button>
+                <button ng-click="goTo('page3')">page 3</button>
+            </div>
+            <!-- ##### VIEW #####-->
+            <div ng-view></div>
+        </div> <!--close logged in-->
+    </div> <!--close auth wrapper-->
+    </div> <!--close page wrapper-->
+    <!--footer-->
+    <footer>
+        ©
+    </footer>
+
+  
+   
+    <!-- ##### FIREBOX STUFF ##### -->
     <FireBoxRoom>
         <Assets>
             <AssetWebSurface id="vrapt-daisy" src="http://erictrose.github.io/vrapt-daisy/" width="1000" height="800" />
@@ -34,6 +81,9 @@
         </Room>
     </FireBoxRoom>
 
+   
+   
+    <!-- ##### BOTTOM OF PAGE SCRIPTS ##### -->
     <script src="./js/script3.js"></script>
     
 </body>

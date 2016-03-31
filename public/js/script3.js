@@ -1,4 +1,4 @@
-console.log('script 3 loaded');
+console.log('script 3 loading');
 
 //angular test
 if(typeof angular == 'undefined') {
@@ -7,3 +7,4 @@ if(typeof angular == 'undefined') {
     console.log('angular');
 }
 
+console.log('script 3 loaded');

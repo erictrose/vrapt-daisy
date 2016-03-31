@@ -1,0 +1,43 @@
+<h1>vrapt page 3 view</h1>
+
+<p>{{test}}</p>
+
+<!--<div class="modal-bg" ng-show="viewModalOpen">-->
+
+<!--<div class="modal-card {{viewColor}}Card">-->
+
+<!--
+<img ng-src="{{viewImg}}" class="modal-card-image">
+
+<select class="f1 modal-card-colorselect" ng-model="myColor">
+    <option value="grey">Grey</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+    <option value="purple">Purple</option>
+    <option value="yellow">Yellow</option>
+</select>
+       
+<input class="f1 modal-card-number black-placeholders" type="text" placeholder="0" ng-model="myAttack" maxlength="1">
+        
+<span class="f1">{{notify}}</span>
+
+<textarea class="f2 modal-card-desc black-placeholders" name="" maxlength="140" placeholder="description" ng-model="myDesc" required></textarea>
+
+<div ng-repeat="card in newest | reverse" ng-click="switchViewModal(card)">
+    <div class="new-card-top">
+        <p class="f1 new-card-type">
+            {{card.cardType}}
+        </p>
+        <p class="f1 new-card-title">
+            {{card.cardName}}
+        </p>
+        <p class="f1 new-card-number">
+            {{card.cardAttack}}/{{card.cardDefense}}
+        </p>
+    </div>
+    <img class="new-card-image" ng-src="{{card.cardImgSmall}}">
+    <p class="f2 new-card-desc">
+        {{card.cardDesc}}
+    </p>
+</div>
+-->
