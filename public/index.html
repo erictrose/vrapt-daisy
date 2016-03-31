@@ -39,9 +39,11 @@
         <!-- ##### LOGGED OUT ##### -->
         <div class="logged-out" ng-hide="authData">
             <span>{{providerError}}</span>
+<!--
             <button ng-click="twitterlogin()">login with twitter</button>
             <button ng-click="googlelogin()">login with google</button>
             <button ng-click="githublogin()">login with github</button>
+-->
             <p>{{loginText}}</p>
             <input type="email" name="" placeholder="email" ng-model="loginEmail">
             <input type="password" name="" placeholder="password" ng-model="loginPassword">
