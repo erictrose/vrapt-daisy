@@ -1,4 +1,4 @@
-app.config(["$routeProvider",function($routeProvider) {
+app.config(["$routeProvider", function($routeProvider) {
 $routeProvider
     //home
     .when("/home",{
@@ -11,22 +11,22 @@ $routeProvider
             }]
         }
     })
-    //page 2
+    //page2
     .when("/page2",{
         controller: "Page2Ctrl",
         templateUrl: "views/page2.html",
-        resolve:{
+        resolve: {
             "currentAuth": ["Auth", function(Auth){
                 //return Auth.$waitForAuth();
                 return Auth.$requireAuth();
             }]
         }
     })
-    //page 3
+    //page3
     .when("/page3",{
         controller: "Page3Ctrl",
         templateUrl: "views/page3.html",
-        resolve:{
+        resolve: {
             "currentAuth": ["Auth", function(Auth){
                 //return Auth.$waitForAuth();
                 return Auth.$requireAuth();

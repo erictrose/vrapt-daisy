@@ -18,6 +18,7 @@
     <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
     <!-- CORE -->
     <script src="./js/app.js"></script>
+    <script src="./js/config.js"></script>
     <script src="./js/factories/Auth.js"></script>
     <script src="./js/filters/run.js"></script>
     <script src="./js/controllers/AuthCtrl.js"></script>
@@ -52,15 +53,6 @@
         </div> <!--close logged out-->
         <!-- ##### LOGGED IN ##### -->
         <div class="logged-in" ng-show="authData">
-            <p>{{profileName}}</p>
-            <img ng-src="{{profilePic}}" />
-            <button ng-click="logout()">logout</button>
-<!--
-            <div ng-controller="NavCtrl">
-                <button ng-click="goTo('page2')">page 2</button>
-                <button ng-click="goTo('page3')">page 3</button>
-            </div>
--->
             <!-- ##### VIEW #####-->
             <div ng-view></div>
         </div> <!--close logged in-->
