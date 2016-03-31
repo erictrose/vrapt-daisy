@@ -3,3 +3,5 @@ app.controller("Page3Ctrl", ["currentAuth", "$scope", function(currentAuth, $sco
   // authenticated user or null if not logged in
     $scope.test = 'WORKING page 3';
 }]);
+
+console.log('page 3 controller loaded');

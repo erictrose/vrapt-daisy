@@ -24,3 +24,5 @@ app.controller("HomeCtrl", ["currentAuth", "$scope", "$rootScope", "$routeParams
     };
 
 }]);
+
+console.log('home controller loaded');

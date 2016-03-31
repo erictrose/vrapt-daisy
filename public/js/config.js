@@ -34,8 +34,5 @@ $routeProvider
         }
     })
     //otherwise
-    .otherwise({redirectTo: '/login'});
-cloudinaryProvider
-    .set("cloud_name", "dgs2b0bpa")
-    .set("upload_preset", "alqlnivc");
+    .otherwise({redirectTo: '/home'});
 }]);
