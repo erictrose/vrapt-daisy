@@ -19,6 +19,8 @@ html, body, .viewport {
 }
 
 .wrapper-page {
+    width: 560px;
+    max-width: 560px;
     border: 1px solid lightgray;
 }
 
