@@ -21,6 +21,7 @@
     <!-- SCRIPTS -->
     <script src="./js/script1.js"></script>
     <script src="./js/factories/Auth.js"></script>
+    <script src="./js/filters/run.js"></script>
     <script src="./js/controllers/AuthCtrl.js"></script>
     <script src="./js/controllers/NavCtrl.js"></script>
     <script src="./js/controllers/HomeCtrl.js"></script>
@@ -58,10 +59,12 @@
             <p>{{profileName}}</p>
             <img ng-src="{{profilePic}}" />
             <button ng-click="logout()">logout</button>
+<!--
             <div ng-controller="NavCtrl">
                 <button ng-click="goTo('page2')">page 2</button>
                 <button ng-click="goTo('page3')">page 3</button>
             </div>
+-->
             <!-- ##### VIEW #####-->
             <div ng-view></div>
         </div> <!--close logged in-->

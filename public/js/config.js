@@ -34,5 +34,5 @@ $routeProvider
         }
     })
     //otherwise
-    .otherwise({redirectTo: '/home'});
+    .otherwise({redirectTo: '/login'});
 }]);
